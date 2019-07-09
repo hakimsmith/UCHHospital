@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UCHHospital
 {
-    class Employee
+    public class Employee
     {
         public string Name { get; set; }
         public int Enumber { get; set; }
@@ -17,6 +17,13 @@ namespace UCHHospital
             Enumber = eNumber;
             Salary = salary;
             PaidOrNot = false;
+        }
+
+        public virtual void PrintEmployees()
+        {
+            Console.WriteLine("--------");
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Number: " + Enumber);
         }
 
         public virtual void PayEmployee()
@@ -39,7 +46,7 @@ namespace UCHHospital
 
         public virtual void DrawBlood(Patient currentPatient)
         {
-            currentPatient.Bloodlevel -= 1;
+            currentPatient.BloodLevel -= 1;
             Console.WriteLine("The doctor has drawn blood from the patient");
         }
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UCHHospital
 {
-    class Patient
+   public class Patient
     {
         public string PatientName { get; set; }
         public int HealthLevel { get; set; }
@@ -16,6 +16,5 @@ namespace UCHHospital
             HealthLevel = 10;
             BloodLevel = 20;
         }
-
     }
 }
