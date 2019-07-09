@@ -15,7 +15,7 @@ namespace UCHHospital
 
         public override void PrintEmployees()
         {
-            base.PrintEmployees()
+            base.PrintEmployees();
             Console.WriteLine("Sweeping Status: " + IsSweeping);
         }
 
